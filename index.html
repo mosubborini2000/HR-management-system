@@ -1,168 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home Page</title>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-      }
-  
-      header {
-        background-color: #333;
-        padding: 10px;
-        color: #fff;
-      }
-  
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-  
-      nav ul li {
-        display: inline;
-        margin-right: 10px;
-      }
-  
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-      }
-  
-      form {
-        margin-top: 20px;
-      }
-  
-      form label {
-        display: block;
-        margin-bottom: 5px;
-      }
-  
-      form input[type="text"],
-      form select {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-      }
-  
-      form input[type="submit"] {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-      }
-  
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        padding: 20px;
-      }
-  
-      .card {
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 300px;
-      }
-  
-      .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 5px;
-      }
-  
-      .card h3 {
-        margin-top: 10px;
-        font-size: 18px;
-      }
-  
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-  
-      .social-media a {
-        color: #fff;
-        margin-right: 10px;
-        text-decoration: none;
-      }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>home page</title>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="accounting.html">Accounting</a></li>
-      </ul>
-    </nav>
-  </header>
-  <form id="form">
-    <label for="fname">Name:</label><br>
-    <input type="text" id="fname" name="fname" value="" required><br><br>
+    <header>
 
-    <label for="department">Department:</label>
-    <select id="department" name="department" required>
-      <option value="">Select Value</option>
-      <option value="Administration">Administration</option>
-      <option value="Marketing">Marketing</option>
-      <option value="Development">Development</option>
-      <option value="Finance">Finance</option>
-    </select><br><br>
 
-    <label for="level">Level:</label>
-    <select id="level" name="level" required>
-      <option value="">Select Value</option>
-      <option value="Junior">Junior</option>
-      <option value="Mid-Senior">Mid-Senior</option>
-      <option value="Senior">Senior</option>
-    </select><br><br>
+        <div id="navBar">
+            <ul>
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./accounting.html">Accounting Page</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <label for="imageurl">Image URL:</label>
-    <input type="text" id="imageurl" name="imageurl" required><br><br>
+    <main>
+        <div id="divForm">
+            <form action="" id="empForm">
+                <label for="fullName">
+                    Full Name : <br><input type="text" id="fullName" required>
+                </label>
 
-    <input type="submit" value="Submit">
-  </form>
-  
-  <main id="sec1"></main>
+                <label for="img">
+                    Image-URL : <br><input type="text" id="img" required>
+                </label>
 
-  <footer>
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
-    </div>
-    <div>
-     2023 ASAC
-    </div>
-  </footer>
+                <label for="department">
+                    Department : <br><select name="" id="department" required>
+                        <option value="">select ---</option>
+                        <option value="Administration">Administration</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Development">Development</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+                </label>
 
-  <script src="./app.js"></script>
+                <label for="level">
+                    Level : <br><select name="" id="level" required q>
+                        <option value="">select ---</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Mid-Senior">Mid-Senior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </label>
+
+                <input type="submit" value="submit" class="button">
+            </form>
+        </div>
+            <section id="cardEmp">
+            </section>
+            <script src="./app.js"></script>
+        
+
+       
+    </main>
+
+    <footer>
+            <div id="links">
+                <h3>Social Media Links :</h3> 
+                <ul>
+                    <li><a href="#">FaceBook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div id="copyright">
+                <h3> Copyright© All rights reserved </h3>
+            </div>
+    </footer>
 </body>
 </html>
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-      

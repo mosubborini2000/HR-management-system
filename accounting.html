@@ -1,31 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="table.css">
     <title>Accounting Page</title>
 </head>
 <body>
+
     <header>
-        <nav>
+
+        <div id="navBar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="accounting.html">Accounting</a></li>
-           
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./accounting.html">Accounting Page</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
+
     <main>
-       
+        <table id="table">
+            <tr>
+                <th>Department Name</th>
+                <th>Number of employee</th>
+                <th>totla salary</th>
+                <th>Average salary</th>
+            </tr>
+            <tr id="administration">
+                <td>Administration</td>
+            </tr>
+            <tr id="marketing">
+                <td>Marketing</td>
+            </tr>
+            <tr id="development">
+                <td>Development</td>
+            </tr>
+            <tr id="finance">
+                <td>Finance</td>
+            </tr>
+            <tr id="allDept">
+                <td>All Departments</td>         
+            </tr>
+        </table>
+        <script src="accounting.js">
+        </script> 
     </main>
 
     <footer>
-        <div>
-            <a href="*">Facebook</a>
-            <a href="*">Twitter</a>
-            <a href="#">Instagram</a>
-
+        <div id="links">
+            <h3>Social Media Links :</h3> 
+            <ul>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
         </div>
-        <p>&copy; 2023 ASAC</p>
-    </footer>
+
+        <div id="copyright">
+            <h3> Copyright© All rights reserved </h3>
+        </div>
+</footer>
+    
 </body>
 </html>
+
