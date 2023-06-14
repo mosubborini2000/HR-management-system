@@ -63,7 +63,7 @@ function info() {
 
         totalForAllDept = totalSalaryDev + totalSalaryEmpAdm + totalSalaryFina + totalSalaryMark;
         avgForAllDept = totalForAllDept / (numOfEmpAdm + numOfEmpDev + numOfEmpFina + numOfEmpMark)
-        totalEmp = umOfEmpAdm + numOfEmpDev + numOfEmpFina + numOfEmpMark ;
+        totalEmp = numOfEmpAdm + numOfEmpDev + numOfEmpFina + numOfEmpMark ;
     }
     let tdEle = document.createElement("td");
     tdEle.textContent = numOfEmpAdm;
